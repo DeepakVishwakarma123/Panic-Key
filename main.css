@@ -1,0 +1,182 @@
+body{
+    background-color:hsl(0, 100%, 30%);
+    width: 600px;
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 10px;
+}
+.fixedCircle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: shadow 2s ease-in-out infinite normal;
+}
+
+@keyframes shadow {
+    0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(249, 226, 226, 0.7)
+  }
+}
+
+.hotKey{
+    font-size: 40px;
+    font-weight: bolder;
+    color: hsl(0, 0%,100%);
+}
+
+.hotProfile{
+     font-size: 40px;
+    font-weight: bolder;
+    color: hsl(0, 0%,100%);
+}
+
+.btnRow{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+button{
+    cursor: pointer;
+}
+
+.sideMenu{
+    transition: all 0.9s ease;
+    background-color: gray;
+    top: 0;
+    right: -900px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.moveToleft{
+    left: 50%;
+    right: 0;
+}
+
+.sideClosemain{ 
+    padding: 10px;
+}
+
+.defaultSize{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.defaultSizeIns{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.profileDataContainer{
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nameSet{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.addButton{
+    padding: 10px;
+}
+
+input{
+    padding: 3px;
+}
+
+.error{
+    color: rgb(140, 36, 36);
+    display: none;
+}
+
+.copysection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.instructions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.urlPerProfile{
+    background-color: white;
+    display: flex;
+    padding:6px;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    height:22px;
+}
+
+.toastSuccess{
+    background-color: #166534;
+    border: 1px #22c55e solid;
+    color: #ffffff;
+    display: flex;
+    padding:6px;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    height:22px;
+    letter-spacing: 6px;
+    font-size: 12px;
+}
+
+.toastError{
+    background-color: #991b1b;
+    border: 1px #ef4444 solid;
+    display: flex;
+    padding:6px;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    height:22px;
+    letter-spacing: 6px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+
+
+
+.deleteButton{
+    height: 20px;
+}
+
+.mainHolder{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.saveChoice{
+    width: 100%;
+    padding: 10px;
+}

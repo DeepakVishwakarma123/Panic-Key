@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- acts as a main row -->
+     <div class="btnRow">
+        <button id="buttonSetting" style="background-color: transparent;border: none;">
+            <img src="./images/settings.png" alt="setting icon image" width="40px">
+        </button>
+     </div>
+    <div class="outer">
+        <!-- this box should be in center -->
+            <div class="fixedCircle">
+                <div>
+                 <!-- it holds image -->
+                 <img src="images/info.png" width="100px" alt="alert image for emergency">
+                </div>
+            </div>
+               <div>
+                    <p class="hotKey"><kbd>Ctrl+Shift+1</kbd></p>
+                </div>
+                <div class="hotProfile">
+                   Devloper Profile loaded
+                </div>
+    </div>
+                 <div class="instructions">
+                    <p class="defaultSizeIns">Steps to Customize Shortcut</p>
+                    <ol class="defaultSizeIns">
+                      <li>Copy below link</li>
+                      <li>Paste In new Tab</li>
+                      <li>ShortCut Customize Menu Open</li>
+                      <li>Customize ShortCut and save it</li>  
+                    </ol>
+                    <div class="copysection">
+                        <button type="button" style="border: none;background: transparent;">
+                            <img src="./images/copy.png" width="20px" alt="copy icon">
+                        </button>
+                        <p class="defaultSizeIns">chrome://extensions/shortcuts</p>
+                    </div>
+                </div>
+
+
+    <!-- side menu bar -->
+     <div class="sideMenu">
+        <!-- close button -->
+         <div class="sideClosemain">
+            <button style="background-color: transparent;border: none;" id="closeButton">
+                <img src="./images/close.png" alt="close button" width="30px">
+            </button>
+         </div>
+         <div class="profileDataContainer">
+            <!-- profile name -->
+                <div class="nameSet">
+                 <label class="defaultSize" for="profileName">Profile Name</label>
+                 <input type="text" id="profileName" placeholder="Enter Profile Name">
+                </div>
+
+                 <div class="nameSet">
+                 <label class="defaultSize" for="url">Url Address</label>
+                 <input type="url" id="url" placeholder="Enter Url">
+                </div>
+
+                <button class="addButton" type="button">Add Url To Custom Profile </button>
+
+                <h2 class="error">max 3 url are allowed per profile</h2>
+                
+                <div>
+                 
+                <p class="defaultSize">Select Profile By Below:-</p>
+                <select class="selectProfile">
+                </select>
+                 
+                <div class="mainHolder">
+                   
+                </div>
+                </div>
+               
+                
+         </div>
+     </div>
+     <!-- small amoutn of code that's why we are doing here -->
+     <script src="main.js" type="module">
+     </script>
+</body>
+</html>
